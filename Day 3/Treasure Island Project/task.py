@@ -34,8 +34,8 @@ if choice1 == "left":
         'do you "build a hut" or look for a "river"?: ')
 
         if choice3 == "river":
-            choice4 = input('You re almost there! You ve found a cave with bats and a '
-                            'waterfall with crystal clear water. Do you believe the treasure is '
+            choice4 = input('You re almost there! You ve found a cave with bats and a\n '
+                            'waterfall with crystal clear water. Do you believe the treasure is\n '
                             'in the "cave" or inside the "waterfall"?: ')
             if choice4 == "cave":
                 print("YOU WON! CONGRATULATIONS!")
