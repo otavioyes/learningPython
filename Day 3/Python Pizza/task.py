@@ -15,7 +15,7 @@ elif size == "M":
 elif size == "L":
     bill += 25
 else:
-    print("You have chosen an invalid size.")
+    print("You have chosen an invalid size o size pizza.")
 
 #Os adicionais de pepperoni
 if pepperoni == "Y":
@@ -24,14 +24,12 @@ if pepperoni == "Y":
     else:
         bill += 3
 
-
-
 #Add extra cheese
 if extra_cheese == "Y":
     bill += 1
 
 
-    print(f"Your final bill is: ${bill}")
+print(f"Your final bill is: ${bill}.")
 
 
 
