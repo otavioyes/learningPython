@@ -1,3 +1,5 @@
+import random
+
 rock = '''
     _______
 ---'   ____)
@@ -24,3 +26,30 @@ scissors = '''
       (____)
 ---.__(___)
 '''
+
+print("Welcome to the game ROCK, PAPER AND SCISSORS!\n")
+options = [rock, paper, scissors]
+
+
+user = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors: "))
+print(f"YOU: {options[user]}")
+
+
+choice_pc = random.randint(0, 2)
+print(f"Computer chose: {options[choice_pc]}")
+
+
+if user == choice_pc:
+    print("It's a draw")
+elif(user == 0 and choice_pc == 2) or \
+    (user == 1 and choice_pc == 0) or \
+    (user == 2 and choice_pc == 1):
+    print("YOU WIN")
+else:
+    "Computer WON!"
+
+
+
+
+
+
