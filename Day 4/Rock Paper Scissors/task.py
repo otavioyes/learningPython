@@ -38,16 +38,25 @@ print(f"YOU: {options[user]}")
 choice_pc = random.randint(0, 2)
 print(f"Computer chose: {options[choice_pc]}")
 
-
-if user == choice_pc:
-    print("It's a draw")
-elif(user == 0 and choice_pc == 2) or \
-    (user == 1 and choice_pc == 0) or \
-    (user == 2 and choice_pc == 1):
-    print("YOU WIN")
-else:
-    "Computer WON!"
-
+if user >= 3 or user < 0:
+    print("Number invalid, please! enter a number valid!")
+elif user == 0 and choice_pc == 0:
+    print("Is'a draw!")
+elif user == 0 and choice_pc == 1:
+    print("COMPUTER WON")
+elif user == 0 and choice_pc == 2:
+    print("YOU WON")
+elif user == 1 and choice_pc == 1:
+    print("Is'a draw !")
+elif user == 1 and choice_pc == 2:
+   print("COMPUTER WON!")
+elif user == 1 and choice_pc == 0:
+    print("YOU WON!")
+elif user == 2 and choice_pc == 0:
+    print("COMPUTER WON")
+elif user == 2 and choice_pc == 1:
+    print("YOU WON")
+else: print("Is'a draw !")
 
 
 
