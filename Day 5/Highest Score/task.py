@@ -9,8 +9,11 @@ print(range(1, 10))
 #print(max(student_scores)) #199
 #print(min(student_scores)) #24
 
-nota = 0
+max_score = 0
 for score in student_scores:
-    if nota > score:
-        nota = score
-    print(score)
+    if score > max_score:
+        max_score = score
+
+print(max_score)
+
+print(sum(student_scores))
